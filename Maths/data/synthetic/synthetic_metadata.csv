@@ -1,0 +1,2 @@
+dataset_type,n_timepoints,n_rois,TR_seconds,duration_seconds,random_seed,baseline_arbitrary_units,signal_scale,state_1_timepoints,state_2_timepoints,state_3_timepoints,note
+synthetic,300,10,2.0,600.0,42,100.0,1.5,1-100,101-200,201-300,Simulated data; not measured human fMRI and not for clinical use.
