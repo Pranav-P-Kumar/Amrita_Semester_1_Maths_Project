@@ -1,0 +1,15 @@
+{
+  "n_timepoints": 300,
+  "n_rois": 10,
+  "TR_seconds": 2.0,
+  "window_size": 50,
+  "step_size": 10,
+  "n_windows": 26,
+  "dynamic_fc_shape": [
+    26,
+    10,
+    10
+  ],
+  "mean_absolute_difference_static_vs_mean_dynamic": 0.037385879929066966,
+  "data_note": "Synthetic demonstration data, not measured human fMRI."
+}
