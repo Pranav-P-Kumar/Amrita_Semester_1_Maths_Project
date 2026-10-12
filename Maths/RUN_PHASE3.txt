@@ -1,0 +1,27 @@
+PHASE 3 – DYNAMIC FUNCTIONAL CONNECTIVITY
+
+Install: pip install -r requirements_phase3.txt
+Run:     python run_phase3.py
+Test:    pytest -q
+
+Input:
+data/processed/synthetic_fmri_preprocessed.csv
+
+If continuing from Phase 2, replace the included demo input with:
+data/processed/synthetic_fmri_preprocessed.csv from your Phase 2 folder.
+
+Outputs:
+outputs/connectivity_matrices/static_fc.csv and .npy
+outputs/connectivity_matrices/dynamic/dynamic_fc_matrices.npy
+outputs/connectivity_matrices/dynamic/window_metadata.csv
+outputs/connectivity_matrices/dynamic/window_XX_fc.csv
+outputs/connectivity_matrices/window_fc_summary.csv
+outputs/connectivity_matrices/edge_variability_summary.csv
+outputs/connectivity_matrices/phase3_report.json
+
+Defaults: TR=2 s, window=50 samples (100 s), step=10 samples (20 s).
+For 300 time points this gives 26 matrices of shape 10 x 10.
+
+Pearson correlations are signed; no thresholding is applied here. The diagonal is
+1 and matrices are symmetric. Overlapping windows are not independent samples.
+Test other window lengths as a sensitivity analysis. Data included is synthetic.
